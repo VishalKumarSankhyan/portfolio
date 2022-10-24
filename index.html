@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+  <title>V K S Portfolio</title>
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top shadow container-xxl" style="display: none;">
+    <div class="container-fluid px-3">
+      <a class="navbar-brand text-dark fw-bold" href="javascript:void(0)">
+        V K S
+      </a>
+
+      <button id="sideMenuBtn" class="btn" style=" box-shadow: none; padding: 0px;"><svg
+          xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+        </svg></button>
+      <!-- <button class="navbar-toggler shadow-none " style="border:none !important; outline:none;" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <!--collapse navbar-collapse-->
+      <div class="collapse navbar-collapse justify-content-end" id="mynavbar">
+        <ul class="navbar-nav ">
+          <li class="nav-item py-2">
+            <a class="nav-link nav-link-home  fw-bold text-dark custom_nav_link" href="#home">Home</a>
+          </li>
+
+          <li class="nav-item  py-2">
+            <a class="nav-link nav-link-about fw-bold text-dark custom_nav_link" href="#about">About</a>
+            <div class="my_box">
+
+            </div>
+          </li>
+
+          <li class="nav-item py-2">
+            <a class="nav-link nav-link-portfolio fw-bold text-dark custom_nav_link" href="#portfolio">Project</a>
+            <div class="my_box">
+
+            </div>
+          </li>
+
+          <li class="nav-item py-2">
+            <a class="nav-link nav-link-skill fw-bold text-dark custom_nav_link" href="#skill">Skill</a>
+            <div class="my_box">
+
+            </div>
+          </li>
+
+
+
+          <li class="nav-item py-2">
+            <a class="nav-link fw-bold  custom_nav_link nav-link-contact" href="#contact">Contact</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Navbar End -->
+
+  <!-- Side menu start-->
+
+  <div class="side-menu-bg h-100 w-100 bg-dark position-fixed top-0"
+    style="opacity: 0.5; z-index: 1045 ; display: none;"></div>
+
+  <div id="side-menu" class="side-menu h-100 w-75 bg-white position-fixed top-0 shadow" style="z-index: 1050;">
+    <ul class="list-unstyled">
+      <li class="side-menu-nav-li py-3 ">
+        <a class="text-decoration-none text-dark ps-4 " href="#home">Home</a>
+        <span class="side-menu-nav-li-home h-100 bg-primary active"></span>
+      </li>
+      <li class="side-menu-nav-li py-3">
+        <a class="text-decoration-none text-dark ps-4" href="#about">About</a>
+        <span class="side-menu-nav-li-about h-100 bg-primary"></span>
+      </li>
+
+      <li class="side-menu-nav-li py-3">
+        <a class=" text-decoration-none text-dark ps-4" href="#portfolio">Portfolio</a>
+        <span class="side-menu-nav-li-portfolio h-100 bg-primary"></span>
+      </li>
+      <li class="side-menu-nav-li py-3">
+        <a class="text-decoration-none text-dark ps-4" href="#skill">Skill</a>
+        <span class="side-menu-nav-li-skill h-100 bg-primary"></span>
+      </li>
+      <li class="side-menu-nav-li py-3">
+        <a class="text-decoration-none text-dark ps-4" href="#contact">Contact</a>
+        <span class="side-menu-nav-li-contact h-100 bg-primary"></span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Side menu end-->
+
+  <!-- Scroll to top Btn start-->
+
+  <button id="scroll-top-btn" class="btn btn-white position-fixed shadow-lg p-0 d-flex justify-content-center align-items-center"
+    style="height: 45px; width:45px; border-radius: 10px; right: 25px; bottom: 25px; z-index: 1000;">
+    <svg xmlns="http://www.w3.org/2000/svg" class="text-primary" width="32" height="32" fill="currentColor" class="bi bi-arrow-up-short"
+      viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+    </svg>
+  </button>
+
+  <!-- Scroll to top Btn end-->
+
+  <!-- Home Start -->
+
+  <section class="home bg-primary container-xxl " style="padding: 0px;" id="home">
+    <div class="container">
+      <div class="row home-row min-vh-100 py-xl-5 align-items-center align-content-center">
+        <div class="col-md-6 mt-5 mt-md-0">
+          <div class="home-img text-center">
+            <img src="images/user_icon.jpg" class="img-fluid w-75 rounded-circle shadow-sm my-4"
+              alt="Vishal Kumar Sankhyan" srcset="">
+          </div>
+        </div>
+        <div class="col-md-6 mt-4 mt-md-0 order-md-first">
+          <div class="home-text ms-2">
+            <p class="text-white mb-1 fs-5">Hello I'm</p>
+            <h1 class="text-white fs-3 ">Web developer</h1>
+            <h2 class="text-white fs-1 fw-bold">Vishal Kumar Sankhyan</h2>
+
+            <!-- Button -->
+            <div class="d-flex align-items-center  justify-content-lg-start pt-2 mb-5">
+              <a href="" class="btn btn-white me-3">Download Cv</a>
+              <a href="#contact" class="btn btn-blue ">Contact Me </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Home End -->
+
+
+  <!-- Portfolio Section start -->
+  <section class="portfolio min-vh-100 align-items-center align-content-center container-xxl bg-white pb-2" style="padding: 0px;" id="about">
+    <div class="container pt-5">
+      <!-- <h1 class="text-center py-5 ">My Work</h1> -->
+      <h2 class="text-uppercase text-center py-5 fw-bold">About Me</h2>
+    </div>
+
+    <div class="container">
+      <div class="row m-2">
+        <div class="col-lg-6 col-12 d-flex justify-content-center mb-sm-4 mb-1">
+          <img src="images/user_icon.jpg" alt="" class="img-fluid rounded shadow-sm ms-lg-5 ms-0" style="width: 60%;">
+        </div>
+        <div class="col-lg-6 col-12 mt-md-1 mt-4 px-lg-0 px-2" >
+          <h3 class="mb-3 fs-4 fw-bold">Web Developer & Software Engineer</h3>
+         <p class="fs-6 ">My name is Vishal Kumar Sankhyan. I study at Shoolini Univerisity, India. I am pursuing my BTech in Computer Science And Engineering, specializing in Artificial Intelligence And Machine Learning. I am a keen progressor in technology, I am currently learning DSA, and Python, and playing around with the prerequisites of Machine Learning.</p>
+          <!-- Button -->
+          <div class="d-flex align-items-center  justify-content-lg-start mb-3">
+            <a href="" class="btn btn-primary me-3">Download Cv</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Portfolio Section start -->
+  <section class="portfolio min-vh-100 align-items-center align-content-center container-xxl bg-white" id="portfolio">
+    <div class="container pt-5">
+      <!-- <h1 class="text-center py-5 ">My Work</h1> -->
+      <h2 class="text-uppercase text-center py-5 fw-bold">My Work</h2>
+    </div>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-xxl-3 col-lg-4 col-md-6 ">
+          <div class="card shadow mb-3 border-0">
+            <img src="images/Capture.JPG" class="card-img-top" style="padding: 0px !important;" alt="" srcset="">
+
+            <div class="card-body d-flex justify-content-between align-items-center mt-1"
+              style="padding: 0.5rem 0.5rem;">
+
+              <h5 class="card-title mb-0">Ecommerce Site</h5>
+              <a href="https://vishalkumarsankhyan.github.io/openshop-ecommerce-2.github.io/"
+                class="btn btn-primary fs-6 " style="padding: 3px 15px; ">Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xxl-3 col-lg-4 col-md-6 ">
+          <div class="card shadow mb-3 border-0">
+            <img src="images/Capture 2.JPG" class="card-img-top" style="padding: 0px !important;" alt="" srcset="">
+
+            <div class="card-body d-flex justify-content-between align-items-center mt-1"
+              style="padding: 0.5rem 0.5rem;">
+
+              <h5 class="card-title mb-0">Home Renovation</h5>
+              <a href="https://vishalkumarsankhyan.github.io/Home-Renovation-3.github.io/" class="btn btn-primary fs-6 "
+                style="padding: 3px 15px;">Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xxl-3 col-lg-4 col-md-6 ">
+          <div class="card shadow mb-3 border-0">
+            <img src="images/Capture 6.JPG" class="card-img-top" style="padding: 0px !important;" alt="" srcset="">
+
+            <div class="card-body d-flex justify-content-between align-items-center mt-1"
+              style="padding: 0.5rem 0.5rem;">
+
+              <h5 class="card-title mb-0">My Bus</h5>
+              <a href="" class="btn btn-primary disabled fs-6 "
+                style="padding: 3px 15px;">Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xxl-3 col-lg-4 col-md-6 ">
+          <div class="card shadow mb-3 border-0">
+            <img src="images/Capture 3.JPG" class="card-img-top" style="padding: 0px !important;" alt="" srcset="">
+
+            <div class="card-body d-flex justify-content-between align-items-center mt-1"
+              style="padding: 0.5rem 0.5rem;">
+
+              <h5 class="card-title mb-0">Tic Tac Toe</h5>
+              <a href="https://vishalkumarsankhyan.github.io/Tic_Tac_toe.github.io/" class="btn btn-primary fs-6 "
+                style="padding: 3px 15px;">Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xxl-3 col-lg-4 col-md-6 ">
+          <div class="card shadow mb-3 border-0">
+            <img src="images/Capture 4.JPG" class="card-img-top" style="padding: 0px !important;" alt="" srcset="">
+
+            <div class="card-body d-flex justify-content-between align-items-center mt-1"
+              style="padding: 0.5rem 0.5rem;">
+
+              <h5 class="card-title mb-0">Calculator</h5>
+              <a href="https://vishalkumarsankhyan.github.io/Calculator.github.io/" class="btn btn-primary fs-6 "
+                style="padding: 3px 15px;">Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xxl-3 col-lg-4 col-md-6 ">
+          <div class="card shadow mb-3 border-0">
+            <img src="images/Capture 5.JPG" class="card-img-top" style="padding: 0px !important;" alt="" srcset="">
+
+            <div class="card-body d-flex justify-content-between align-items-center mt-1"
+              style="padding: 0.5rem 0.5rem;">
+
+              <h5 class="card-title mb-0">To do list</h5>
+              <a href="https://vishalkumarsankhyan.github.io/Tic_Tac_toe.github.io/" class="btn btn-primary fs-6 "
+                style="padding: 3px 15px;">Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xxl-3 col-lg-4 col-md-6 ">
+          <div class="card shadow mb-3 border-0">
+            <img src="images/Capture 7.JPG" class="card-img-top" style="padding: 0px !important;" alt="" srcset="">
+
+            <div class="card-body d-flex justify-content-between align-items-center mt-1"
+              style="padding: 0.5rem 0.5rem;">
+
+              <h5 class="card-title mb-0">Quiz App</h5>
+              <a href="" class="btn btn-primary fs-6 disabled"
+                style="padding: 3px 15px;">Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xxl-3 col-lg-4 col-md-6 ">
+          <div class="card shadow mb-3 border-0">
+            <img src="images/Capture 8.JPG" class="card-img-top" style="padding: 0px !important;" alt="" srcset="">
+
+            <div class="card-body d-flex justify-content-between align-items-center mt-1"
+              style="padding: 0.5rem 0.5rem;">
+
+              <h5 class="card-title mb-0">Notes Maker</h5>
+              <a href="" class="btn btn-primary fs-6 disabled"
+                style="padding: 3px 15px;">Demo</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Portfolio Section end -->
+
+
+
+  <!-- Portfolio Section start -->
+  <section class="portfolio min-vh-100 align-items-center align-content-center px-lg-1 px-md-1  px-3 container-xxl bg-white pb-1" style="padding: 0px;" id="skill">
+    <div class="container pt-5">
+      <h2 class="text-uppercase text-center py-5 fw-bold">My Skills</h2>
+      <!-- <h1 class="text-center py-5 ">My Skill</h1> -->
+    </div>
+    <div class="container mb-5">
+      <div class="row mt-3">
+        <div class="col-xxl-4 col-lg-6 col-12 mb-3">
+          <div class="box  align-items-center justify-content-center">
+            <div class="d-flex justify-content-between">
+              <p>HTML</p>
+              <p>80%</p>
+            </div>
+            <div class="skill_progras_bar">
+              <span class="juice bg-primary" data-persent="80"></span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-xxl-4  col-lg-6 col-12 mb-3">
+          <div class="box  align-items-center justify-content-center">
+            <div class="d-flex justify-content-between">
+              <p>CSS</p>
+              <p>75%</p>
+            </div>
+            <div class="skill_progras_bar">
+              <span class="juice bg-info" data-persent="75"></span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-xxl-4  col-lg-6 col-12 mb-3">
+          <div class="box  align-items-center justify-content-center">
+            <div class="d-flex justify-content-between">
+              <p>JS</p>
+              <p>65%</p>
+            </div>
+            <div class="skill_progras_bar">
+              <span class="juice bg-warning" data-persent="70"></span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-xxl-4  col-lg-6 col-12 mb-3">
+          <div class="box align-items-center justify-content-center">
+            <div class="d-flex justify-content-between">
+              <p>C</p>
+              <p>55%</p>
+            </div>
+            <div class="skill_progras_bar">
+              <span class="juice bg-primary" data-persent="60"></span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-xxl-4  col-lg-6 col-12 mb-3">
+          <div class="box  align-items-center justify-content-center">
+            <div class="d-flex justify-content-between">
+              <p>C++</p>
+              <p>60%</p>
+            </div>
+            <div class="skill_progras_bar">
+              <span class="juice bg-info" data-persent="65"></span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-xxl-4  col-lg-6 col-12 mb-3">
+          <div class="box  align-items-center justify-content-center">
+            <div class="d-flex justify-content-between">
+              <p>Python</p>
+              <p>70%</p>
+            </div>
+            <div class="skill_progras_bar">
+              <span class="juice bg-warning" data-persent="70"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xxl-4  col-lg-6 col-12 mb-3">
+          <div class="box  align-items-center justify-content-center">
+            <div class="d-flex justify-content-between">
+              <p>React</p>
+              <p>40%</p>
+            </div>
+            <div class="skill_progras_bar">
+              <span class="juice bg-primary" data-persent="40"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xxl-4  col-lg-6 col-12 mb-3">
+          <div class="box  align-items-center justify-content-center">
+            <div class="d-flex justify-content-between">
+              <p>SQL</p>
+              <p>80%</p>
+            </div>
+            <div class="skill_progras_bar">
+              <span class="juice bg-info" data-persent="70"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </section>
+
+
+  <section class="contact min-vh-100 align-items-center align-content-center bg-primary container-xxl " style="padding: 0px;" id="contact">
+    <div class="container pt-5">
+      <!-- <h1 class="text-center py-5 text-white">Contact</h1> -->
+      <h2 class="text-uppercase text-center  py-5 text-white fw-bold">Contact</h2>
+    </div>
+
+    <div class="container align-items-center align-content-center">
+
+      <div class="row">
+
+        <div class="col-lg-6 col-12 mb-4">
+
+          <div class="contact_item d-flex mb-3 mx-3">
+            <div class="contact_icon text-white me-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                <path
+                  d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+              </svg>
+            </div>
+            <div class="contact_item text-white">
+              <h3 class="fs-5">Email</h3>
+              <p class="text-white">sankhyan@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact_item d-flex mb-3 mx-3">
+            <div class="contact_icon text-white me-3">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor"
+                class="mercado-match" width="20" height="20" focusable="false">
+                <path
+                  d="M8 1L1 4.47V11a3 3 0 003 3h8a3 3 0 003-3V4.47zm5 10a1 1 0 01-1 1H4a1 1 0 01-1-1V6.51L8 9l5-2.49z">
+                </path>
+              </svg>
+            </div>
+            <div class="contact_item text-white">
+              <h3 class="fs-5">Outlook</h3>
+              <p class="text-white">vishalkumar@shooliniuniversity.com</p>
+            </div>
+          </div>
+
+          <div class="contact_item d-flex mb-3 mx-3">
+            <div class="contact_icon text-white  me-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+              </svg>
+            </div>
+            <div class="contact_item text-white">
+              <h3 class="fs-5">Linkedin</h3>
+              <p class="text-white">linkedin.com/in/vishal-kumar-sankhyan-48144b248</p>
+            </div>
+          </div>
+
+          <div class="contact_item d-flex mb-3 mx-3">
+            <div class="contact_icon text-white  me-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+              </svg>
+            </div>
+            <div class="contact_item text-white">
+              <h3 class="fs-5">Phone</h3>
+              <p>+91 7807071397</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6 col-12 mb-4">
+          <form action="" class="w-75 mx-auto text-white">
+            <div class="form-group mt-2">
+              <label for="name ">Name</label>
+              <input type="text" id="name" class="form-control mt-2">
+            </div>
+            <div class="form-group mt-2">
+              <label for="email ">Email</label>
+              <input type="email" id="email" class="form-control mt-2">
+            </div>
+            <div class="form-group mt-2">
+              <label for="message ">Message</label>
+              <textarea id="message" class="form-control mt-2 " style="height: 100px;"></textarea>
+            </div>
+            <button type="submit" class="btn btn-white my-3 ">Submit</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- footer satrt-->
+  <!-- <footer>
+    <div class="container-lg border-top py-1">
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="text-center mb-0">&copy; 2022 V.K.S</p>
+        </div>
+      </div>
+    </div>
+  </footer> -->
+  <!-- footer end-->
+
+
+  <script src="js/jquery-3.6.1.min.js"></script>
+  <script>
+
+    var juices = document.querySelectorAll('.juice');
+    juices.forEach((value, index, array) => {
+      var persent = value.dataset.persent;
+      value.style.width = persent + '%';
+    })
+
+    $('document').ready(function () {
+
+      var sideMenuStatus = false;
+
+      $('#sideMenuBtn').on('click', sideMenuToggle);
+      $('.side-menu-bg').on('click', sideMenuToggle);
+
+      function sideMenuToggle() {
+        if (sideMenuStatus) {
+          $('body').css('overflow', '')
+          $('#side-menu').removeClass('open');
+          $('.side-menu-bg').css('display', 'none')
+          sideMenuStatus = false;
+        }
+        else {
+          $('body').css('overflow', 'hidden')
+          $('#side-menu').addClass('open');
+          $('.side-menu-bg').css('display', 'block')
+          sideMenuStatus = true;
+        }
+      };
+
+      $('.side-menu-nav-li').each(function () {
+        $(this).click(function () {
+          sideMenuToggle();
+        })
+      })
+
+      $(window).bind('hashchange', activeNavState);
+      activeNavState();
+      function activeNavState() {
+        console.log($(location).attr('href'))
+
+        $('.nav-link-home').removeClass('active')
+        $('.nav-link-about').removeClass('active')
+        $('.nav-link-portfolio').removeClass('active')
+        $('.nav-link-skill').removeClass('active')
+        $('.nav-link-contact').removeClass('active')
+
+        $('.side-menu-nav-li-home').removeClass('active')
+        $('.side-menu-nav-li-about').removeClass('active')
+        $('.side-menu-nav-li-portfolio').removeClass('active')
+        $('.side-menu-nav-li-skill').removeClass('active')
+        $('.side-menu-nav-li-contact').removeClass('active')
+
+        if ($(location).attr('href').includes('#home')) {
+          $('.nav-link-home').addClass('active')
+          $('.side-menu-nav-li-home').addClass('active')
+        }
+        else if ($(location).attr('href').includes('#about')) {
+          $('.nav-link-about').addClass('active')
+          $('.side-menu-nav-li-about').addClass('active')
+        }
+        else if ($(location).attr('href').includes('#portfolio')) {
+          $('.nav-link-portfolio').addClass('active')
+          $('.side-menu-nav-li-portfolio').addClass('active')
+        }
+        else if ($(location).attr('href').includes('#skill')) {
+          $('.nav-link-skill').addClass('active')
+          $('.side-menu-nav-li-skill').addClass('active')
+        }
+        else if ($(location).attr('href').includes('#contact')) {
+          $('.nav-link-contact').addClass('active')
+          $('.side-menu-nav-li-contact').addClass('active')
+        }
+        else {
+          $('.nav-link-home').addClass('active')
+          $('.side-menu-nav-li-home').addClass('active')
+        }
+      }
+
+      $(window).scroll(navSrcoll);
+      navSrcoll()
+      function navSrcoll() {
+        if ($(this).scrollTop() > 200) {
+          $('.navbar').fadeIn('slow').css('display', 'flex');
+          $('#scroll-top-btn').fadeIn('slow').addClass('show');
+        }
+        else {
+          $('.navbar').fadeOut('slow').css('display', 'none');
+          $('#scroll-top-btn').fadeOut('slow').removeClass('show');
+        }
+      }
+
+
+      $('#scroll-top-btn').click(function(){
+        $(window).scrollTop('0');
+      })
+    })
+
+  </script>
+  <script src="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
