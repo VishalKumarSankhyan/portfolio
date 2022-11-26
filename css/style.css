@@ -16,6 +16,8 @@ body{
     line-height: 1.5;
     text-align: left;
     min-width: fit-content;
+
+    min-width: 350px;
 }
 
 .nav-link{
@@ -219,7 +221,9 @@ body{
     }
 }
 
-
+/* .row{
+    width: 100%!important;
+} */
 /*
     transition: transform .3s ease-in-out;
 
