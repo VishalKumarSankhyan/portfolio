@@ -173,7 +173,7 @@
             prerequisites of Machine Learning.</p>
           <!-- Button -->
           <div class="d-flex align-items-center  justify-content-lg-start mb-3">
-            <a href="resume.pdf" download="resume.pdf"  class="btn btn-primary me-3">Download Cv</a>
+            <a href="resume.pdf" download="resume.pdf" class="btn btn-primary me-3">Download Cv</a>
           </div>
         </div>
       </div>
@@ -496,7 +496,7 @@
         </div>
 
         <div class="col-lg-6 col-12 mb-4">
-          <form action="" class="w-75 mx-auto text-white">
+          <form class="w-75 mx-auto text-white">
             <div class="form-group mt-2">
               <label for="name ">Name</label>
               <input type="text" id="name" class="form-control mt-2">
@@ -509,7 +509,7 @@
               <label for="message ">Message</label>
               <textarea id="message" class="form-control mt-2 " style="height: 100px;"></textarea>
             </div>
-            <button type="submit" class="btn btn-white my-3 ">Submit</button>
+            <button type="submit" id="submit_btn" class="btn btn-white my-3 ">Submit</button>
           </form>
         </div>
 
@@ -534,6 +534,7 @@
 
 
   <script src="js/jquery-3.6.1.min.js"></script>
+
   <script>
 
     var juices = document.querySelectorAll('.juice');
@@ -550,7 +551,7 @@
 
     window.addEventListener('scroll', function () {
       var bounding = myElement.getBoundingClientRect();
-      console.log(bounding.top)
+      //console.log(bounding.top)
 
 
       // if (bounding.top >= 0 && bounding.left >= 0 && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)) {
@@ -561,6 +562,39 @@
       //   console.log('Element is NOT in the viewport!');
       // }
     })
+
+
+    var submit_btn = document.querySelector('#submit_btn');
+
+    const postData = async (e) => {
+      e.preventDefault();
+      var name = document.querySelector('#name').value;
+      var email = document.querySelector('#email').value;
+      var message = document.querySelector('#message').value;
+      //console.log(name, "---", email, "---", message);
+
+      const res = await fetch("https://contact-form-8670d-default-rtdb.firebaseio.com/contact-form-database.json", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          message
+        })
+      });
+      if (res) {
+        document.querySelector('#name').value = '';
+        document.querySelector('#email').value = '';
+        document.querySelector('#message').value = '';
+
+        alert("Submited Successfully");
+      }
+    }
+
+    submit_btn.addEventListener('click', postData)
 
 
 
@@ -596,7 +630,7 @@
       $(window).bind('hashchange', activeNavState);
       activeNavState();
       function activeNavState() {
-        console.log($(location).attr('href'))
+        //console.log($(location).attr('href'))
 
         $('.nav-link-home').removeClass('active')
         $('.nav-link-about').removeClass('active')
@@ -661,3 +695,21 @@
 </body>
 
 </html>
+
+<!-- 
+
+var myElement = document.getElementById('my-element');
+var bounding = myElement.getBoundingClientRect();
+
+function elementInViewport() {
+
+    var bounding = myElement.getBoundingClientRect();
+
+    if (bounding.top >= 0 && bounding.left >= 0 && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)) {
+
+        console.log('Element is in the viewport!');
+    } else {
+
+        console.log('Element is NOT in the viewport!');
+    }
+} -->
